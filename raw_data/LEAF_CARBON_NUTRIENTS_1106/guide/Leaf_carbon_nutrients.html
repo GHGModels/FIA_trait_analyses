@@ -1,0 +1,232 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+
+"http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us">
+<head>
+<meta name="docSource" content="guide document">
+<meta name="project" content="Vegetation Collections">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="/css/guide.css">
+<title>A Global Database of Carbon and Nutrient Concentrations of Green and Senesced Leaves</title>
+<link rel="stylesheet" type="text/css" href="/css/content.css">
+</head>
+<body>
+<div id="guidebox">
+<!--#include virtual="/guide_header.shtml" --><div class="pagetitle"> 
+		A Global Database of Carbon and Nutrient Concentrations of Green and Senesced Leaves<br>
+<a class="button" href="http://dx.doi.org/10.3334/ORNLDAAC/1106" target="_blank">Get Data</a>
+</div>
+<div id="contentbox">
+	Revision date: July 17, 2012<br>
+<br>
+
+<h2>Summary:</h2>
+<p class="I1">This data set provides carbon (C), nitrogen (N), phosphorus (P), 
+potassium (K), calcium (Ca), and magnesium (Mg) concentrations in green and 
+senesced leaves. Vegetation characteristics reported include species growth habit, leaf area, mass, and mass loss with senescence. The data were compiled from 86 selected studies in 31 countries, and 
+resulted in approximately 1,000 data points for both green and senesced leaves from woody and non-woody vegetation as described in Vergutz et al (2012). 
+The studies were conducted from 1970-2009. There are two comma-delimited data files with this data set.</p>
+  
+ <p class="centered">
+ <img alt="study locations" height="289" src="Leaf_Carbon_Nutrients_Figure1_rev2.png" width="550">&nbsp;</p>
+ <p class="centered">Figure 1. Global distribution of study locations. </p>
+<h2>Data Citation:</h2>
+<p class="I1"><strong>Cite this data set as follows:</strong></p>
+<p class="I1">Vergutz, L., S. Manzoni, A. Porporato, R.F. Novais, and R.B. Jackson. 2012. A Global Database of Carbon and Nutrient Concentrations of Green and Senesced Leaves. Data set.
+ Available on-line [http://daac.ornl.gov] from Oak Ridge National Laboratory Distributed Active Archive Center, Oak Ridge, Tennessee,
+  U.S.A.<a href="http://dx.doi.org/10.3334/ORNLDAAC/1106"> http://dx.doi.org/10.3334/ORNLDAAC/1106
+</a> </p>
+
+<h2>Table of Contents:</h2>
+<ul>
+<li><a HREF="#HDataSetOverview">1 Data Set Overview</a></li>
+<li><a HREF="#datacharact">2 Data Characteristics</a></li>
+<li><a HREF="#appderivation">3 Applications and Derivation</a></li>
+<li><a HREF="#qualityassess">4 Quality Assessment</a></li>
+<li><a HREF="#HAcqMatMethods">5 Acquisition Materials and Methods</a></li>
+<li><a HREF="#HDataDescrAccess">6 Data Access</a></li>
+<li><a HREF="#references">7 References </a></li>
+</ul>
+<a name="HDataSetOverview"></a>
+<h2>1. Data Set Overview:</h2>
+<p class="I1">This data set provides carbon (C), nitrogen (N), phosphorus (P), potassium (K), calcium (Ca), and magnesium (Mg) concentrations in green and senesced leaves. Vegetation characteristics reported include species growth habit, leaf area, mass, and mass loss with senescence. The data were compiled from 86 selected studies in 31 countries, and resulted in approximately 1,000 data points for both green and senesced leaves from woody and non-woody vegetation as described in Vergutz et al (2012). The studies were conducted from 1970-2009.  </p>
+<a name="datacharact"></a>
+<h2>2. Data Characteristics:&nbsp;&nbsp; </h2>
+	<p class="I1">Data are presented in two comma-delimited files.</p>
+		<p class="I1"><strong>File 1: </strong>Leaf_Carbon_Nutrients_data.csv</p>
+<p class="I1">The file contains leaf carbon and nutrient concentrations along with Köppen Climate 
+Classification (McKnight and Hess, 2000) , vegetation characteristics, and study site information. </p>
+ <p class="I1"><strong>Leaf_Carbon_Nutrients_data.csv </strong></p>
+ <table class="grid" style="width: 766px"><tbody><tr>
+<th class="grid">Column</th><th class="grid">Heading</th><th class="grid">Units/format</th><th class="grid">Description</th>
+
+</tr><tr><td class="grid">1</td><td class="grid">Record_number</td><td class="grid">
+		 &nbsp;</td><td class="gridL">An index of all rows
+</td></tr><tr><td class="grid">2</td><td class="grid">Ref</td><td class="grid">&nbsp;</td><td class="gridL">Reference/Short citation
+</td></tr><tr><td class="grid">3</td><td class="grid">Study_number</td><td class="grid">
+		 &nbsp;</td><td class="gridL">	Study number; index into the study reference data file
+</td></tr><tr><td class="grid">4</td><td class="grid">Country</td><td class="grid">
+		 &nbsp;</td><td class="gridL">	 	Country
+</td></tr><tr><td class="grid">5</td><td class="grid">Region</td><td class="grid">
+		 &nbsp;</td><td class="gridL">	 	State
+</td></tr><tr><td class="grid">6</td><td class="grid">City	</td><td class="grid">
+		 &nbsp;</td><td class="gridL"> 	City
+</td></tr><tr><td class="grid">7</td><td class="grid">Site_name</td><td class="grid">
+		 &nbsp;</td><td class="gridL">	 	Site name or reference
+</td></tr><tr><td class="grid">8</td><td class="grid">Lat</td><td class="grid">	decimal degree</td><td class="gridL">Latitude: positive=north, negative=south	
+</td></tr><tr><td class="grid">9</td><td class="grid">Long</td><td class="grid">	decimal degree</td><td class="gridL">Longitude: positive=east, negative=west
+</td></tr><tr><td class="grid">10</td><td class="grid">Köppen_CC</td><td class="grid">
+		 &nbsp;</td><td class="gridL">	 	Köppen climate classification. A-tropical/megathermal, B-dry(arid and semiarid, including desert and steppe climates), C-temperate/mesothermal (including Mediterranean, oceanic, humid subtropical and subpolar oceanic climates, D-continental/microthermal, E-polar
+</td></tr><tr><td class="grid">11</td><td class="grid">Vegetation</td><td class="grid">
+		 &nbsp;</td><td class="gridL">	 	Major vegetation type
+</td></tr><tr><td class="grid">12</td><td class="grid">Species</td><td class="grid">
+		 &nbsp;</td><td class="gridL">	Study species
+</td></tr><tr><td class="grid">13</td><td class="grid">Family</td><td class="grid">
+		 &nbsp;</td><td class="gridL">	 	Family
+</td></tr><tr><td class="grid">14</td><td class="grid">Growth_habit</td><td class="grid">
+		 &nbsp;</td><td class="gridL">	 	Growth Habit
+</td></tr><tr><td class="grid">15</td><td class="grid">Senesced_sample_method</td><td class="grid">
+		 &nbsp;</td><td class="gridL">Senesced sample collection method (picked from the plant, recently fallen, or litterfall traps)
+</td></tr><tr><td class="grid">16</td><td class="grid">MAT</td><td class="grid">	degree C</td><td class="gridL">	Mean annual temperature
+</td></tr><tr><td class="grid">17</td><td class="grid">TAP</td><td class="grid">	mm</td><td class="gridL">	Total annual precipitation
+</td></tr><tr><td class="grid">18</td><td class="grid">Elevation</td><td class="grid">	m</td><td class="gridL">	Meters above sea level
+</td></tr><tr><td class="grid">19</td><td class="grid">C_green_leaf</td><td class="grid"> %</td><td class="gridL">dry mass	Carbon in green leaf 
+</td></tr><tr><td class="grid">20</td><td class="grid">C_senesced_leaf</td><td class="grid"> %</td><td class="gridL"> dry mass	Carbon in senesced leaf 
+</td></tr><tr><td class="grid">21</td><td class="grid">N_green_leaf</td><td class="grid"> %</td><td class="gridL"> dry mass	Nitrogen in green leaf
+</td></tr><tr><td class="grid">22</td><td class="grid">N_senesced_leaf</td><td class="grid">%</td><td class="gridL"> dry mass	Nitrogen in senesced leaf 
+</td></tr><tr><td class="grid">23</td><td class="grid">P_green_leaf</td><td class="grid">% </td><td class="gridL">dry mass	Phosphorus in green leaf 
+</td></tr><tr><td class="grid">24</td><td class="grid">P_senesced_leaf</td><td class="grid">%</td><td class="gridL"> dry mass	Phosphorus in senesced leaf 
+</td></tr><tr><td class="grid">25</td><td class="grid">K_green_leaf</td><td class="grid">%</td><td class="gridL"> dry mass	Potassium in green leaf 
+</td></tr><tr><td class="grid">26</td><td class="grid">K_senesced_leaf</td><td class="grid">%</td><td class="gridL"> dry mass	Potassium in senesced leaf
+</td></tr><tr><td class="grid">27</td><td class="grid">Ca_green_leaf</td><td class="grid">%</td><td class="gridL"> dry mass	Calcium in green leaf
+</td></tr><tr><td class="grid">28</td><td class="grid">Ca_senesced_leaf</td><td class="grid"> %</td><td class="gridL"> dry mass	Calcium in senesced leaf
+</td></tr><tr><td class="grid">29</td><td class="grid">Mg_green_leaf</td><td class="grid">%</td><td class="gridL"> dry mass	Magnesium in green leaf 
+</td></tr><tr><td class="grid">30</td><td class="grid">Mg_senesced_leaf</td><td class="grid">% </td><td class="gridL">dry mass	Magnesium in senesced leaf
+</td></tr><tr><td class="grid">31</td><td class="grid">Spec_area_green_leaf</td><td class="grid">g/m2</td><td class="gridL">	Green leaf - specific area 
+</td></tr><tr><td class="grid">32</td><td class="grid">Spec_area_senesced_leaf</td><td class="grid">g/m2</td><td class="gridL">	Senesced leaf - specific area 
+</td></tr><tr><td class="grid">33</td><td class="grid">Area_green_leaf</td><td class="grid">cm2</td><td class="gridL">	Green leaf area 
+</td></tr><tr><td class="grid">34</td><td class="grid">Area_senesced_leaf</td><td class="grid">cm2</td><td class="gridL">	Senesced leaf area 
+</td></tr><tr><td class="grid">35</td><td class="grid">Mass_green_leaf</td><td class="grid">	mg	</td><td class="gridL">Green leaf dry mass
+</td></tr><tr><td class="grid">36</td><td class="grid">Mass_senesced_leaf</td><td class="grid">mg</td><td class="gridL">Senesced leaf dry mass
+</td></tr><tr><td class="grid">37</td><td class="grid">Leaf_loss</td><td class="grid">%	</td><td class="gridL">Leaf mass loss with senescence
+</td></tr><tr><td class="grid">38</td><td class="grid">Leaf_shrink</td><td class="grid">%</td><td class="gridL">Leaf area shrinkage with senescence
+</td></tr><tr><td class="grid" colspan="4">
+</td></tr><tr><td class="grid"></td>
+</tr></tbody></table>
+
+
+
+
+
+
+
+
+
+
+<p class="I1"><strong>Example data records:</strong></p>
+<table class="nogrid" cellpadding="3"><tbody><tr><td style="width: 839px"> 
+ Record_number,Ref,Study_number,Country,Region,City,Site_name,Lat,Long,Köppen_CC,<br>Vegetation,Species,Family,Growth_habit,Senesced_sample_method,MAT,TAP,<br>Elevation,C_green_leaf,C_senesced_leaf,N_green_leaf,N_senesced_leaf,P_green_leaf,P_senesced_leaf,K_green_leaf,K_senesced_leaf,<br>Ca_green_leaf,Ca_senesced_leaf,Mg_green_leaf,Mg_senesced_leaf,Spec_area_green_leaf,Spec_area_senesced_leaf,Area_green_leaf,<br>Area_senesced_leaf,Mass_green_leaf,Mass_senesced_leaf,Leaf_loss,Leaf_shrink
+
+	<br>
+
+	<br>785,Allison & Vitousek (2004),1,USA,HI,,,19.7,-155.1,A,Wet tropical forest,Cibotium glaucum,Cibotiaceae,Ferns,<br>Picked from the plant or recently fallen,23.0,4000,150,1.40,0.75,0.10,0.04,87.7
+	<br>786,Allison & Vitousek (2004),1,USA,HI,,,19.7,-155.1,A,Wet tropical forest,Dicranopteris linearis,Gleicheniaceae,Ferns,<br>Picked from the plant or recently fallen,23.0,4000,150,,,0.87,0.53,0.06,0.03,89.3
+	<br>787,Allison & Vitousek (2004),1,USA,HI,19.7,-155.1,A,Wet tropical forest,Dicranopteris sandwichianum,Gleicheniaceae,Ferns,<br>Picked from the plant or recently fallen,23.0,4000,150,,,2.15,1.42,0.24,0.08,44.1
+…<br>815,Killingbeck & Whitford (1996),85,USA,NM,Chihuahuan,,32.5,-106.8,B,Perennial desert shrubs,Rhus microphylla,Anacardiaceae,<br>Tree (deciduous),Litterfall,14.4,272,1200,,,2.30,1.10,<br>816,Killingbeck & Whitford (1996),85,USA,NM,Chihuahuan,,32.5,-106.8,B,Perennial desert shrubs,Rhus microphylla,Anacardiaceae,<br>Tree (deciduous),Litterfall,14.4,272,1200,,,2.80,1.60,<br>817,Killingbeck & Whitford (1996),85,USA,NM,Chihuahuan,,32.5,-106.8,B,Perennial desert shrubs,Rhus microphylla,Anacardiaceae,<br>Tree (deciduous),Litterfall,14.4,272,1200,,,2.60,1.40
+</td></tr></tbody></table>
+<br>
+<p class="I1"><strong>File 2:</strong>
+Study reference file: Leaf_Carbon_Nutrients_studies.csv</p>
+
+<table class="grid"><tbody><tr>
+<th class="grid">Column Names</th><th class="grid">Description</th>
+<tr><td class="grid">Study_number</td><td class="gridL">Study number; a number assigned to data from a particular paper</td></tr>
+<tr><td class="grid">Ref</td><td class="gridL">Reference/Short citation</td></tr>
+<tr><td class="grid">Author</td><td class="gridL">List of author or authors</td></tr>
+<tr><td class="grid">Title</td><td class="gridL">Name of the article</td></tr>
+<tr><td class="grid">Journal</td><td class="gridL">The journal that the article was published in</td></tr>
+<tr><td class="grid">Volume</td><td class="gridL">Volume or usually the year of journal</td></tr>
+<tr><td class="grid">Issue</td><td class="gridL">Issue indicates the sequence of the publication</td></tr>
+<tr><td class="grid">BP</td><td class="gridL">Beginning page</td></tr>
+<tr><td class="grid">EP</td><td class="gridL">Ending page</td></tr>
+<tr><td class="grid">PubYear</td><td class="gridL">Year the article was published</td></tr>
+<tr><td class="grid">Publisher</td><td class="gridL">Producer of publication</td></tr>
+<tr><td class="grid">Notes</td><td class="gridL">Misc. notes</td></tr>
+</tbody></table>
+<p class="I1"><strong>Example data records:</strong></p>
+
+<table class="nogrid" cellpadding="3"><tbody><tr><td>
+Study_number,Ref,Author,Title,Journal,Volume,Issue,BP,EP,PubYear,Publisher,Notes<br>
+	<br>1,Allison & Vitousek (2004),"Allison, S.D. and Vitousek, P.M.",Rapid nutrient cycling in leaf litter from invasive plants in Hawai’i,Oecologia,141,4,612,619,2004,Springer,
+	<br>2,Bertiller et al. (2006),"Bertiller, M.B. and Mazzarino, M.J. and Carrera, A.L. and Diehl, P. and Satti, P. and Gobbi, M. and Sain, C.L.",Leaf strategies and soil N across a regional humidity gradient in Patagonia,Oecologia,148,4,612,624,2006,Springer<br>3,Blanco et al. (2009),"Blanco, J.A. and Imbert, J.B. and Castillo, F.J.",Thinning affects nutrient resorption and nutrient-use efficiency in two Pinus sylvestris stands in the Pyrenees,Ecological Applications,19,3,682,698,2009,Eco Soc America<br>&nbsp;…
+	<br>83,Zotz (2004),"Zotz, G. and others",The resorption of phosphorus is greater than that of nitrogen in senescing leaves of vascular epiphytes from lowland Panama,Journal of Tropical Ecology,20,6,693,696,2004,Cambridge Univ 
+	Press<br>84,Kazakou et al. (2007),"Kazakou, E. and Garnier, E. and NAVAS, M.L. and Roumet, C. and Collin, C. and Laurent, G.",Components of nutrient residence time and the leaf economics spectrum in species from Mediterranean old-fields differing in successional status,Functional Ecology,21,2,235,245,2007,Wiley 
+	Online Library<br>85,Killingbeck & Whitford (1996),"Killingbeck, K.T. and Whitford, W.G.",High foliar nitrogen in desert shrubs: an important ecosystem trait or defective desert doctrine?,Ecology,,,1728,1737,1996,JSTOR
+</td></tr></tbody></table>
+
+<p class="I1"><strong>Site boundaries: </strong>(All latitude and 
+	longitude are given in decimal degrees)</p>
+<table class="grid"><tbody><tr><th class="grid">Site (Region)</th> 
+					<th class="grid" style="width: 137px">Westernmost Longitude</th> 
+					<th class="grid" style="width: 95px">Easternmost Longitude</th>
+<th class="grid" style="width: 99px"> Northernmost Latitude</th>
+					<th class="grid" style="width: 106px">	Southernmost Latitude</th></tr>
+<tr><td class="grid">Global (31 countries)</td> <td class="grid" style="width: 137px"> -159.7</td>
+					<td class="grid" style="width: 95px">176.9</td>
+					<td class="grid" style="width: 99px"> 68.5</td> 
+					<td class="grid" style="width: 106px">-50</td></tr></tbody></table>
+<p class="I1"><strong>Time period:</strong></p>
+	<ul><li> The data set covers the period&nbsp;1970/01/01 - 2009/12/31</li></ul>
+
+
+
+<a name="appderivation"></a>
+<h2>3. Data Application and Derivation:</h2>
+<p class="I1">Mass data were used in the calculation of the mass loss correction factor (MLCF), which is the ratio of the dry mass of green leaves, 
+to the dry mass of senesced leaves. The MLCF was calculated directly when both dry masses were available and estimated as 1-LML/100 when only the percentage of leaf mass loss (LML)
+ was given (Vergutz et al., 2012). </p>
+
+<p class="I1">Nutrient concentration data were applied in calculating nutrient resorption efficiencies. 
+Using this global database of nutrient contents in green and senesced leaves, resorption efficiencies can be computed across plant types and climates, while accounting for mass loss during senescence. Investigators used the data to compare the relationship between mean nutrient resorption efficiency and climate variables (mean annual temperature (MAT) and mean annual precipitation (MAP)). The mean nutrient resorption efficiency for each nutrient for the data set as a whole and for each plant growth type and climate group were separately calculated using a
+ regression analysis (Vergutz et al., 2012). </p>
+
+<p class="I1">Vergutz et al., (2012),  analyzed 28 ecosystem and biogeochemical models and found wide variation in nutrient resorption efficiency values used in the models. Ecosystem models tend to neglect phosphorus dynamics and do not consider other nutrients, but these nutrient resorption parameters are important for the accuracy of such models. This study has highlighted specific limitations in current resorption parameterizations to help identify improvements for future biogeochemical
+ and land surface models. </p>
+<a name="qualityassess"></a>
+<h2>4. Quality Assessment:</h2>
+<p class="I1">  See original source articles for quality assessment information.</p>
+
+
+<a name="HAcqMatMethods"></a>
+<h2>5. Data Acquisition Materials and Methods:</h2>
+<p class="I1">Data were obtained from published studies that reported or 
+provided sufficient information to calculate mean values of carbon and 
+N, P, K, Ca, and Mg nutrient mass per unit dry mass in mature green and senesced leaves and reported nutrient content on
+ a leaf-mass basis (Vergutz et al., 2012).
+Using Web of Science and Google Scholar search engines, investigators identified studies on nutrient contents in green and senesced leaves 
+with search terms such as “resorption,” nutrient reabsorption,” “nutrient use efficiency,” and “leaf mass loss.”</p>
+
+
+<p class="I1">Data were compiled from 86 studies conducted in 31 countries and resulted in approximately 1,000 data points for both green and senesced leaves from woody and non-woody vegetation. The leaf data were collected from studies taking place from 1970-2009. The data came from major plant types including woody (lianas, shrubs, and trees) and non-woody species, grouped in six growth types: ferns, forbs, gramminoids, conifers, 
+evergreen woody angiosperms, and deciduous woody angiosperms (Vergutz et al., 2012).</p>
+ <p class="I1">Data were compiled on leaf nutrient concentrations from terrestrial plants in every continent except Antarctica, with the majority of the data from Europe and North America. Investigators noted that most of the data for senesced leaves came from newly fallen leaves, with the fewest data from litter-trap studies. Only unfertilized controls from fertilized systems, including annual crops, were included in the data set. Overall, 171 data points were available for carbon concentrations in leaves, with 948 available for nitrogen, 699 for phosphorus, 207
+  for potassium, 150 for calcium, 115 for magnesium, and 191 for the leaf mass-loss calculations (Vergutz et al., 2012).</p>
+ <p class="I1">Mean annual temperature (MAT) data was obtained for each site and ranged from -8° to 31.6°C, mean annual precipitation (MAP) for each site ranged from 125 to 550 mm/yr, and elevation across sites ranged from 0 to 3520 m above sea level. Based on climatic features, study locations were grouped according to Köppen Climate Classification which organized data into five climatic regions: topical/megathermal, dry, temperate/mesothermal, continental/microthermal,
+  and polar (McKnight and Hess 2000, Kottek et al. 2006).</p>
+  <a name="HDataDescrAccess"></a> 
+<h2>6.  Data Access:</h2>
+<p class="I1">This data is available through the Oak Ridge National Laboratory (ORNL) Distributed Active Archive Center (DAAC).</p>
+<h3>Data Archive Center:</h3>
+<p class="I1"><strong>Contact for Data Center Access Information:</strong><br>
+E-mail: <a href="mailto:uso@daac.ornl.gov">uso@daac.ornl.gov</a><br>
+Telephone: +1 (865) 241-3952</p>
+
+<a name="references"></a>
+<h2>7. References:</h2>
+ <p class="I1">Kottek, M., J. Grieser, C. Beck, B. Rudolf, and F. Rubel. 2006. World map of the Koppen-	Greiger climate classification updated. Meteorologist Zeitschrift 15:259-263.</p>
+<p class="I1">McKnight, T. L., and D. Hess. 2000. Climate zones and types: the Koppen system. Physical 	geography: a landscape appreciation. Prentice Hall, Upper Saddle River, New Jersey, 	USA.</p>
+<p class="I1">Vergutz, L., Manzoni, S., Porporato, A., Novais, R. F., and Jackson, R. B. 2012. Global 	resorption efficiencies and concentrations of carbon and nutrients in leaves of 	terrestrial plants, Ecological Monographs  82:2, 205-220. doi: 10.1890/11-0416.1</p>
+</div><br><br>
+<!--#include virtual="/guide_footer.shtml" -->
+</div></body></html>
+
