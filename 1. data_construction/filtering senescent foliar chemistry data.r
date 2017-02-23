@@ -1,5 +1,6 @@
 #This script aggregates green and senscent leaf data for FIA tree species. 
 #data is from ORNL DAAC, here: https://daac.ornl.gov/cgi-bin/dsviewer.pl?ds_id=1106
+rm(list=ls())
 require(data.table)
 foliar <- read.csv('raw_data/LEAF_CARBON_NUTRIENTS_1106/data/Leaf_Carbon_Nutrients_data.csv')
 FIA_codes <- read.csv('raw_data/mycorrhizal_SPCD_data.csv')
@@ -16,7 +17,6 @@ colnames(foliar)[which(names(foliar) == "V2")] <- "species"
 
 #subset to only include species within the FIA, and have senescent N data.
 FIA_codes$spp.match <- paste(FIA_codes$GENUS, FIA_codes$SPECIES, sep=' ')
-to.match <- FIA_codes[spp.match %in% out$Species,]
 foliar <- foliar[Species %in% FIA_codes$spp.match,]
 foliar <- foliar[!is.na(foliar$N_senesced_leaf),]
 
@@ -43,6 +43,9 @@ out <- merge(out, sub[,.(spp.match,MYCO_ASSO,SPCD)],by.x = 'Species', by.y = 'sp
 #get rid of space separated Species column
 out <- out[,!names(out) %in% c('Species')]
 
+#make rownames genus_species, only include two N traits
+rownames(out) <- out$genus_species
+
 #get AM and ECM data sets
 out.AM  <- out[out$MYCO_ASSO == 'AM' ,]
 out.ECM <- out[out$MYCO_ASSO == 'ECM',]
@@ -52,3 +55,6 @@ out.ECM <- out[out$MYCO_ASSO == 'ECM',]
 saveRDS(out    , 'analysis_data/species_foliar_N.rds')
 saveRDS(out.AM , 'analysis_data/species_foliar_N_AM.rds')
 saveRDS(out.ECM, 'analysis_data/species_foliar_N_ECM.rds')
+write.csv(out    ,'analysis_data/species_foliar_N.csv')
+write.csv(out.AM ,'analysis_data/species_foliar_N_AM.csv')
+write.csv(out.ECM,'analysis_data/species_foliar_N_ECM.csv')
